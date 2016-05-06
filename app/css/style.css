@@ -1,0 +1,77 @@
+html {
+	font-size: 62.5%;
+}
+
+.container {
+	lost-center: 127rem;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+img {
+	margin-top: 1rem;
+	border: 0.2rem solid;
+	border-radius: 2rem;
+}
+
+section {
+  lost-utility: clearfix;
+  text-align: center;
+}
+
+.one div {
+	lost-column: 1/4;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	background-color: red;
+	color: #fff;
+}
+
+.two div {
+	lost-column: 2/4 2;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	background-color: green;
+	color: #fff;
+}
+
+div:nth-child(even) {
+	background-color: maroon;
+}
+
+.two div:nth-child(even) {
+	background-color: gray;
+}
+
+/*****Media Queries*****/
+@media screen and (max-width: 96rem) {
+	.one div {
+		lost-column: 1/3;
+	}
+
+	.two div {
+		lost-column: 1/3;
+	}
+}
+
+@media screen and (max-width: 76.8rem) {
+	.one div {
+		lost-column: 1/2;
+	}
+
+	.two div {
+		lost-column: 3/4 2;
+	}
+}
+
+@media screen and (max-width: 48rem) {
+	.one div {
+		lost-column: 1/1;
+	}
+
+	.two div {
+		lost-column: 4/4;
+	}
+}
